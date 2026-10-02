@@ -1,0 +1,174 @@
+## 3. Arquitectura de Memoria
+
+El sistema de memoria de CORTEX está diseñado para simular las capacidades cognitivas humanas mediante tres capas de almacenamiento semántico. Estas tablas definen la estructura de la base de datos interna del bot.
+
+### 3.1 Memoria Semántica (Enciclopedia Interna - LTM)
+
+La memoria semántica contiene el conocimiento general y las categorías de información que el bot utiliza para entender y responder en su dominio de especialización.
+
+| Tipo de Memoria | Categoría de Datos | Descripción | Ejemplo de Entrada | Durabilidad |
+|---|---|---|---|---|
+| **Semántica (LTM)** | Conceptos Fundamentales | Definiciones y principios básicos del dominio | "Moda sostenible: ropa hecha con materiales ecológicos" | Permanente |
+| **Semántica (LTM)** | Tendencias y Estilos | Diferentes categorías de moda, épocas y gustos | "Minimalismo: uso de colores neutros, líneas limpias" | Permanente |
+| **Semántica (LTM)** | Marcas y Diseñadores | Base de datos de marcas, sus características y valores | "Marca ZARA: moda rápida, accesible, actualizada" | Permanente |
+| **Semántica (LTM)** | Reglas de Compatibilidad | Normas de combinación de colores, texturas y siluetas | "Los tonos pastel combinan bien con prendas oversize" | Permanente |
+| **Semántica (LTM)** | Contextos Sociales | Códigos de vestimenta para diferentes eventos | "Evento corporativo: traje formal, colores oscuros" | Permanente |
+
+### 3.2 Memoria Episódica (Contexto Conversacional - STM)
+
+La memoria episódica almacena información específica del usuario actual y del historial reciente de la conversación.
+
+| Tipo de Memoria | Categoría de Datos | Descripción | Ejemplo de Entrada | Durabilidad |
+|---|---|---|---|---|
+| **Episódica (STM)** | Perfil de Usuario | Datos demográficos y preferencias del cliente actual | "Nombre: Juan, Edad: 28, Género: M, Estilo: Casual-Sport" | Sesión Actual |
+| **Episódica (STM)** | Preferencias Personales | Colores, marcas y siluetas favoritas | "Juan prefiere azul marino, tonos neutros, ajuste relajado" | Sesión Actual |
+| **Episódica (STM)** | Contexto de la Consulta | Motivo de la conversación y objetivo | "Juan busca outfit para cena romántica este viernes" | Conversación Actual |
+| **Episódica (STM)** | Historial de Recomendaciones | Sugerencias previas en esta sesión | "Ya recomendamos: camisa blanca, pantalón negro, sneakers" | Sesión Actual |
+| **Episódica (STM)** | Límites y Restricciones | Presupuesto, tallas, alergias a materiales | "Presupuesto: $500, Talla: M, Evita: Lana" | Sesión Actual |
+
+### 3.3 Memoria Procedimental (Habilidades y Algoritmos)
+
+La memoria procedimental contiene los procesos, algoritmos y flujos de trabajo que el bot ejecuta automáticamente.
+
+| Tipo de Memoria | Categoría de Datos | Descripción | Ejemplo de Entrada | Activación |
+|---|---|---|---|---|
+| **Procedimental** | Flujos de Recomendación | Pasos para generar sugerencias de outfit | 1. Analizar contexto 2. Filtrar por preferencias 3. Verificar compatibilidad | Automática |
+| **Procedimental** | Algoritmo de Compatibilidad | Reglas de combinación de prendas | Si (color1 == neutral) AND (estilo1 == casual) → compatible | Consulta |
+| **Procedimental** | Estrategia de Adaptación | Proceso de ajuste según feedback del usuario | Si (usuario rechaza) → explorar alternativas similares | Feedback |
+| **Procedimental** | Protocolo de Desambiguación | Cómo resolver ambigüedades en preguntas del usuario | Si (consulta ambigua) → hacer preguntas clarificadoras | Necesidad |
+| **Procedimental** | Escalada de Consultas Complejas | Pasos para manejar preguntas fuera del dominio | Si (tema != moda) → derivar a especialista o respuesta genérica | Necesidad |
+
+### 3.4 Estructura de Base de Datos Simulada
+
+#### 3.4.1 Tabla: Usuarios (Memoria Episódica)
+
+```
+usuario_id | nombre  | edad | genero | estilo_preferido | presupuesto | talla | restricciones
+-----------|---------|------|--------|------------------|-------------|-------|---------------
+001        | Juan    | 28   | M      | Casual-Sport     | $500        | M     | Lana
+002        | María   | 34   | F      | Minimalista      | $800        | S     | Ninguna
+003        | Carlos  | 45   | M      | Formal-Clásico   | $1200       | L     | Poliéster
+```
+
+#### 3.4.2 Tabla: Conceptos de Moda (Memoria Semántica)
+
+```
+concepto_id | nombre              | descripcion                          | colores_tipicos    | siluetas
+------------|---------------------|--------------------------------------|-------------------|-------------
+001         | Minimalismo         | Menos es más, líneas limpias         | Neutral, Blanco    | Oversize
+002         | Maximalismo         | Abundancia de patrones y colores     | Multicolor, Vibrante| Ajustado
+003         | Vintage             | Inspiración en décadas pasadas       | Ocre, Marrón       | Variado
+004         | Streetwear          | Moda urbana y casual                 | Negro, Gris        | Oversize
+005         | Elegancia Clásica   | Formal y refinado                    | Negro, Azul marino | Ajustado
+```
+
+#### 3.4.3 Tabla: Reglas de Compatibilidad (Memoria Procedimental)
+
+```
+regla_id | prenda1       | prenda2          | compatible | razon
+---------|---------------|------------------|------------|---------------------------------------
+001      | Camisa Blanca | Pantalón Negro   | SÍ        | Contraste limpio, combinación clásica
+002      | Estampado 1   | Estampado 2      | NO        | Demasiados patrones, visual caótico
+003      | Blanco        | Blanco           | DEPENDE   | Requiere texturas diferentes
+004      | Color Pastel  | Oversize         | SÍ        | Suave y elegante, proporciones armónicas
+005      | Rojo Vibrante | Azul Marino      | NO        | Contraste agresivo, difícil de armonizar
+```
+
+#### 3.4.4 Tabla: Contextos Sociales (Memoria Semántica)
+
+```
+contexto_id | nombre              | codigo_vestimenta      | colores_recomendados | siluetas_ideales | restricciones
+------------|---------------------|----------------------|----------------------|------------------|--------------------
+001         | Cena Romántica      | Smart Casual/Elegante  | Negro, Vino, Azul    | Ajustado          | Evitar casual
+002         | Reunión Corporativa | Formal Profesional     | Neutro, Negro, Azul  | Clásico           | Evitar estampados
+003         | Fin de Semana       | Casual Cómodo          | Variado              | Oversize          | Libre
+004         | Boda               | Elegancia Formal       | Negro, Blanco, Oro   | Sofisticado       | Accesorios formales
+005         | Evento Deportivo    | Deportivo Casual       | Colores del equipo    | Deportivo         | Practicidad
+```
+
+### 3.5 Flujo de Carga de Memoria
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│         INICIO DE SESIÓN - CARGA DE MEMORIA                │
+└─────────────────────────────────────────────────────────────┘
+                            ↓
+              ┌─────────────────────────────┐
+              │  1. Cargar Memoria Semántica│
+              │  (Permanente - LTM)         │
+              │  - Conceptos de moda        │
+              │  - Reglas de compatibilidad │
+              │  - Contextos sociales       │
+              └─────────────────────────────┘
+                            ↓
+              ┌─────────────────────────────┐
+              │  2. Cargar Memoria Episódica│
+              │  (Variable - STM)           │
+              │  - Datos del usuario actual │
+              │  - Preferencias personales  │
+              │  - Historial de sesión      │
+              └─────────────────────────────┘
+                            ↓
+              ┌─────────────────────────────┐
+              │  3. Cargar Memoria          │
+              │     Procedimental           │
+              │  (Algoritmos - Reglas)      │
+              │  - Flujos de recomendación  │
+              │  - Protocolos de respuesta  │
+              └─────────────────────────────┘
+                            ↓
+        ┌─────────────────────────────────────┐
+        │  4. BOT LISTO PARA INTERACTUAR     │
+        │  Esperando input del usuario...     │
+        └─────────────────────────────────────┘
+```
+
+### 3.6 Ciclo de Actualización de Memoria
+
+Durante una conversación, la memoria se actualiza así:
+
+```
+USUARIO: "Prefiero colores oscuros"
+                        ↓
+    ┌──────────────────────────────────┐
+    │ 1. RECIBIR: Parsear la consulta  │
+    └──────────────────────────────────┘
+                        ↓
+    ┌──────────────────────────────────┐
+    │ 2. EXTRAER: Información relevante │
+    │    → Preferencia: Colores oscuros │
+    └──────────────────────────────────┘
+                        ↓
+    ┌──────────────────────────────────┐
+    │ 3. VALIDAR: Contra Semántica     │
+    │    ¿Existen colores oscuros en   │
+    │    nuestra base?                  │
+    └──────────────────────────────────┘
+                        ↓
+    ┌──────────────────────────────────┐
+    │ 4. ACTUALIZAR: STM del usuario   │
+    │    Juan.preferencias.colores =   │
+    │    ["Negro", "Azul marino",      │
+    │     "Gris oscuro"]               │
+    └──────────────────────────────────┘
+                        ↓
+    ┌──────────────────────────────────┐
+    │ 5. RESPONDER: Con nuevo contexto │
+    │    (Futuras recomendaciones      │
+    │     usarán esta información)     │
+    └──────────────────────────────────┘
+```
+
+### 3.7 Limitaciones y Consideraciones
+
+| Limitación | Descripción | Solución |
+|---|---|---|
+| **Pérdida de Contexto** | La STM se borra al cerrar sesión | Implementar persistencia en BD externa |
+| **Conflicto de Datos** | Preferencias contradictorias | Priorizar preferencias recientes |
+| **Escalabilidad** | Tablas grandes ralentizan búsquedas | Usar índices y caché en memoria |
+| **Actualización Semántica** | LTM desactualizado vs realidad | Revisar y actualizar trimestral |
+| **Privacidad de Datos** | Información sensible del usuario | Encriptar STM, cumplir RGPD |
+
+---
+
+**Próximo paso (Semana 8):** Implementar estas estructuras en código usando Python y una BD simulada o real (SQLite, PostgreSQL).
