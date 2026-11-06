@@ -779,7 +779,12 @@ Usa esta lista para evaluar cualquier conversación nueva contra los Golden Samp
 - [ ] Preguntó o identificó la ocasión antes de recomendar.
 - [ ] Propuso de 2 a 3 colores con una razón.
 - [ ] Respetó el límite de emojis y de longitud.
+
+
 - [ ] Dio una opinión honesta con alternativa cuando algo no funcionaba.
 - [ ] Entregó una imagen del look.
 - [ ] Ante sarcasmo tras una falla, se disculpó una sola vez en lugar de agradecer.
 - [ ] No juzgó cuerpos ni gustos, ni usó jerga forzada.
+      
+- [ ] <img width="577" height="1731" alt="Noodle - El Algoritmo Maestro (Árbol de decisión)" src="https://github.com/user-attachments/assets/bd7d95ff-2a5e-47a4-979c-4b667b80454f" />
+
