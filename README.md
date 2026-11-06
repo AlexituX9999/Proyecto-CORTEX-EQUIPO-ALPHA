@@ -788,3 +788,19 @@ Usa esta lista para evaluar cualquier conversación nueva contra los Golden Samp
       
 - [ ] <img width="577" height="1731" alt="Noodle - El Algoritmo Maestro (Árbol de decisión)" src="https://github.com/user-attachments/assets/bd7d95ff-2a5e-47a4-979c-4b667b80454f" />
 
+· SECCION 5 PROTOCOLO DE RAZONAMIENTO Y ETICA
+
+Sesgo de Confirmacion:  WYSIATI
+WYSIATI ("What You See Is All There Is")("Lo que ves es todo lo que hay") es el término de Kahneman en Pensar rápido, pensar despacio para la tendencia del sistema intuitivo a formar juicios solo con la información disponible, sin preguntarse qué falta. Es la raíz del sesgo de confirmación: si el bot solo recupera datos que encajan con su hipótesis inicial, la conclusión parece sólida aunque no lo sea.
+Se eligió sobre el anclaje porque la contra-medida actúa sobre datos ausentes, no solo sobre el peso de la primera hipótesis.
+
+Aplicación al bot
+Regla: antes de emitir un juicio final, el algoritmo recupera al menos 2 datos que contradigan la hipótesis inicial.
+Condiciones para que la regla sea efectiva:
+• Los datos contradictorios provienen de una fuente independiente a la que generó la hipótesis. Si salen de la misma consulta o índice, el bot reproduce el sesgo con otro nombre.
+• Si no se encuentran contradicciones reales, el resultado lo registra explícitamente (por ejemplo, "no se hallaron 2 contradicciones tras consultar X e Y"). No se inventan para cumplir la regla.
+• El juicio final muestra ambos lados: la hipótesis, los 2 contraejemplos y por qué la conclusión sobrevive o no frente a ellos.
+
+Sesgo de referencia: WYSIATI (Kahneman, Pensar rápido, pensar despacio). El sistema tiende a juzgar solo con la evidencia que tiene disponible y no considera la que falta.
+Contra-medida: Para evitar el sesgo de confirmación (buscar solo datos que apoyen una conclusión previa), el algoritmo busca activamente 2 datos que contradigan la hipótesis inicial, recuperados de una fuente independiente, antes de emitir un juicio final. Si no se encuentran contradicciones, el resultado lo registra explícitamente en lugar de omitirlo.
+
