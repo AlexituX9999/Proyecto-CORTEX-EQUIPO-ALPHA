@@ -24,7 +24,8 @@ Umbral variable, no fijo: en lugar de solo "500 palabras", considerar también d
 Prioridad a atributos numéricos: precios, tallas y fechas ("$50", "talla 38", "para el viernes") nunca se descartan, sin importar su posición en el texto.
 Ventana de contexto reciente: si el usuario corrige algo ("mejor que sea azul, no rojo"), la corrección más reciente sobrescribe a la anterior.
 [memory_architecture_implementation.py](https://github.com/user-attachments/files/32971642/memory_architecture_implementation.py)
-""
+"""
+<img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
 
 
 CORTEX - Sistema de Arquitectura de Memoria
