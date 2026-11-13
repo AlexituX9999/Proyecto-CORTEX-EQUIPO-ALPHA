@@ -26,6 +26,7 @@ Ventana de contexto reciente: si el usuario corrige algo ("mejor que sea azul, n
 [memory_architecture_implementation.py](https://github.com/user-attachments/files/32971642/memory_architecture_implementation.py)
 """
 <img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
+<img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
 
 
 CORTEX - Sistema de Arquitectura de Memoria
