@@ -25,7 +25,7 @@ Prioridad a atributos numéricos: precios, tallas y fechas ("$50", "talla 38", "
 Ventana de contexto reciente: si el usuario corrige algo ("mejor que sea azul, no rojo"), la corrección más reciente sobrescribe a la anterior.
 [memory_architecture_implementation.py](https://github.com/user-attachments/files/32971642/memory_architecture_implementation.py)
 ""
-<img width="1600" height="837" alt="image" src="https://github.com/user-attachments/assets/aa1c94e7-8861-4f08-92ec-be3ae4da907f" />
+
 
 CORTEX - Sistema de Arquitectura de Memoria
 Implementación simulada de las capas de memoria (LTM, STM, Procedimental)
