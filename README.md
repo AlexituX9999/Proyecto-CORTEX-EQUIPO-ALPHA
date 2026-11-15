@@ -2,9 +2,7 @@
 # 1.	Título y Misión (Fase 1).
 Perfil del Asistente : Asistente de moda 
 <img width="617" height="498" alt="WhatsApp Image 2026-08-14 at 11 51 43 AM" src="https://github.com/user-attachments/assets/9b46e3b8-079c-4cfc-9ff6-fca41296bd13" />
-
-(https://github.com/user-attachments/files/32971642/memory_architecture_implementation.py)
-"""
+# 2. Diagramas de percepción (Face 2)
 <img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
 <img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
 ## Atención con las reglas lógicas definidas.
