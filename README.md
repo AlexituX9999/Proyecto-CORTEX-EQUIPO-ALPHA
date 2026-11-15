@@ -3,7 +3,11 @@
 Perfil del Asistente : Asistente de moda 
 <img width="617" height="498" alt="WhatsApp Image 2026-08-14 at 11 51 43 AM" src="https://github.com/user-attachments/assets/9b46e3b8-079c-4cfc-9ff6-fca41296bd13" />
 
-## .Atención con las reglas lógicas definidas.
+(https://github.com/user-attachments/files/32971642/memory_architecture_implementation.py)
+"""
+<img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
+<img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
+## Atención con las reglas lógicas definidas.
 
 Módulo de preprocesamiento que filtra y prioriza la entrada del usuario antes de que llegue al motor de recomendación/generación. Su función es reducir ruido y asegurar que el modelo atienda a las señales relevantes para moda (prenda, talla, color, estilo, ocasión, presupuesto, marca).
 
@@ -23,11 +27,6 @@ Reglas complementarias
 Umbral variable, no fijo: en lugar de solo "500 palabras", considerar también densidad informativa (ratio sustantivos-de-dominio / palabras totales). Un mensaje de 200 palabras con puro relleno también debería activar el filtro.
 Prioridad a atributos numéricos: precios, tallas y fechas ("$50", "talla 38", "para el viernes") nunca se descartan, sin importar su posición en el texto.
 Ventana de contexto reciente: si el usuario corrige algo ("mejor que sea azul, no rojo"), la corrección más reciente sobrescribe a la anterior.
-[memory_architecture_implementation.py](https://github.com/user-attachments/files/32971642/memory_architecture_implementation.py)
-"""
-<img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
-<img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
-
 
 CORTEX - Sistema de Arquitectura de Memoria
 Implementación simulada de las capas de memoria (LTM, STM, Procedimental)
