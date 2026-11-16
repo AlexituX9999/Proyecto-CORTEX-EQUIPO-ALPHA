@@ -1,10 +1,10 @@
 # Proyecto-CORTEX-EQUIPO-ALPHA
-# 1.	Título y Misión (Fase 1).
+# 1.	TÍTULO Y MISIÓN (FACE 1)
 Perfil del Asistente : Asistente de moda 
 <img width="617" height="498" alt="WhatsApp Image 2026-08-14 at 11 51 43 AM" src="https://github.com/user-attachments/assets/9b46e3b8-079c-4cfc-9ff6-fca41296bd13" />
 <img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
 <img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
-# 2. Diagramas de percepción (Face2)
+# 2. DIAGRAMAS DE PERCEPCIÓN (FACE 2)
 # (hace falta imágenes)
 ## Atención con las reglas lógicas definidas.
 
@@ -26,13 +26,13 @@ Reglas complementarias
 Umbral variable, no fijo: en lugar de solo "500 palabras", considerar también densidad informativa (ratio sustantivos-de-dominio / palabras totales). Un mensaje de 200 palabras con puro relleno también debería activar el filtro.
 Prioridad a atributos numéricos: precios, tallas y fechas ("$50", "talla 38", "para el viernes") nunca se descartan, sin importar su posición en el texto.
 Ventana de contexto reciente: si el usuario corrige algo ("mejor que sea azul, no rojo"), la corrección más reciente sobrescribe a la anterior.
-# 3. Tablas de memoria (Face 3)
+# 3. TABLAS DE MEMORIA (FACE 3)
 
 ## 3. Arquitectura de Memoria
 
 El sistema de memoria de CORTEX está diseñado para simular las capacidades cognitivas humanas mediante tres capas de almacenamiento semántico. Estas tablas definen la estructura de la base de datos interna del bot.
 
-### 3.1 Memoria Semántica (Enciclopedia Interna - LTM)
+### 1.1 Memoria Semántica (Enciclopedia Interna - LTM)
 
 La memoria semántica contiene el conocimiento general y las categorías de información que el bot utiliza para entender y responder en su dominio de especialización.
 
@@ -44,7 +44,7 @@ La memoria semántica contiene el conocimiento general y las categorías de info
 | **Semántica (LTM)** | Reglas de Compatibilidad | Normas de combinación de colores, texturas y siluetas | "Los tonos pastel combinan bien con prendas oversize" | Permanente |
 | **Semántica (LTM)** | Contextos Sociales | Códigos de vestimenta para diferentes eventos | "Evento corporativo: traje formal, colores oscuros" | Permanente |
 
-### 3.2 Memoria Episódica (Contexto Conversacional - STM)
+### 1.2 Memoria Episódica (Contexto Conversacional - STM)
 
 La memoria episódica almacena información específica del usuario actual y del historial reciente de la conversación.
 
@@ -56,7 +56,7 @@ La memoria episódica almacena información específica del usuario actual y del
 | **Episódica (STM)** | Historial de Recomendaciones | Sugerencias previas en esta sesión | "Ya recomendamos: camisa blanca, pantalón negro, sneakers" | Sesión Actual |
 | **Episódica (STM)** | Límites y Restricciones | Presupuesto, tallas, alergias a materiales | "Presupuesto: $500, Talla: M, Evita: Lana" | Sesión Actual |
 
-### 3.3 Memoria Procedimental (Habilidades y Algoritmos)
+### 1.3 Memoria Procedimental (Habilidades y Algoritmos)
 
 La memoria procedimental contiene los procesos, algoritmos y flujos de trabajo que el bot ejecuta automáticamente.
 
@@ -68,9 +68,9 @@ La memoria procedimental contiene los procesos, algoritmos y flujos de trabajo q
 | **Procedimental** | Protocolo de Desambiguación | Cómo resolver ambigüedades en preguntas del usuario | Si (consulta ambigua) → hacer preguntas clarificadoras | Necesidad |
 | **Procedimental** | Escalada de Consultas Complejas | Pasos para manejar preguntas fuera del dominio | Si (tema != moda) → derivar a especialista o respuesta genérica | Necesidad |
 
-### 3.4 Estructura de Base de Datos Simulada
+### 1.4 Estructura de Base de Datos Simulada
 
-#### 3.4.1 Tabla: Usuarios (Memoria Episódica)
+#### 1.4.1 Tabla: Usuarios (Memoria Episódica)
 
 ```
 usuario_id | nombre  | edad | genero | estilo_preferido | presupuesto | talla | restricciones
@@ -80,7 +80,7 @@ usuario_id | nombre  | edad | genero | estilo_preferido | presupuesto | talla | 
 003        | Carlos  | 45   | M      | Formal-Clásico   | $1200       | L     | Poliéster
 ```
 
-#### 3.4.2 Tabla: Conceptos de Moda (Memoria Semántica)
+#### 1.4.2 Tabla: Conceptos de Moda (Memoria Semántica)
 
 ```
 concepto_id | nombre              | descripcion                          | colores_tipicos    | siluetas
@@ -92,7 +92,7 @@ concepto_id | nombre              | descripcion                          | color
 005         | Elegancia Clásica   | Formal y refinado                    | Negro, Azul marino | Ajustado
 ```
 
-#### 3.4.3 Tabla: Reglas de Compatibilidad (Memoria Procedimental)
+#### 1.4.3 Tabla: Reglas de Compatibilidad (Memoria Procedimental)
 
 ```
 regla_id | prenda1       | prenda2          | compatible | razon
@@ -104,7 +104,7 @@ regla_id | prenda1       | prenda2          | compatible | razon
 005      | Rojo Vibrante | Azul Marino      | NO        | Contraste agresivo, difícil de armonizar
 ```
 
-#### 3.4.4 Tabla: Contextos Sociales (Memoria Semántica)
+#### 1.4.4 Tabla: Contextos Sociales (Memoria Semántica)
 
 ```
 contexto_id | nombre              | codigo_vestimenta      | colores_recomendados | siluetas_ideales | restricciones
@@ -116,7 +116,7 @@ contexto_id | nombre              | codigo_vestimenta      | colores_recomendado
 005         | Evento Deportivo    | Deportivo Casual       | Colores del equipo    | Deportivo         | Practicidad
 ```
 
-### 3.5 Flujo de Carga de Memoria
+### 1.5 Flujo de Carga de Memoria
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -153,7 +153,7 @@ contexto_id | nombre              | codigo_vestimenta      | colores_recomendado
         └─────────────────────────────────────┘
 ```
 
-### 3.6 Ciclo de Actualización de Memoria
+### 1.6 Ciclo de Actualización de Memoria
 
 Durante una conversación, la memoria se actualiza así:
 
@@ -189,7 +189,7 @@ USUARIO: "Prefiero colores oscuros"
     └──────────────────────────────────┘
 ```
 
-### 3.7 Limitaciones y Consideraciones
+### 1.7 Limitaciones y Consideraciones
 
 | Limitación | Descripción | Solución |
 |---|---|---|
@@ -200,7 +200,8 @@ USUARIO: "Prefiero colores oscuros"
 | **Privacidad de Datos** | Información sensible del usuario | Encriptar STM, cumplir RGPD |
 
 ---
-# (Falta imagen de memoria de trabajo)
+### (Falta imagen de memoria de trabajo)
+# 4. GUIA DE ESTILO Y GIONES (FACE 4)
 <img width="501" height="711" alt="tabla murkwo" src="https://github.com/user-attachments/assets/2bbcb09a-3142-4c0c-a782-dca044b48d04" />
 <img width="381" height="784" alt="diagrama de flujo" src="https://github.com/user-attachments/assets/ed30aa26-28d7-4b2a-858d-ca26d31d752c" />
 # Noodle: Golden Samples
