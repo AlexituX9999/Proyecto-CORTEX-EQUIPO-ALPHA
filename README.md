@@ -1,11 +1,11 @@
-⁹# Proyecto-CORTEX-EQUIPO-ALPHA
+7⁹# Proyecto-CORTEX-EQUIPO-ALPHA
 # 1.	Título y Misión (Fase 1).
 Perfil del Asistente : Asistente de moda 
 <img width="617" height="498" alt="WhatsApp Image 2026-08-14 at 11 51 43 AM" src="https://github.com/user-attachments/assets/9b46e3b8-079c-4cfc-9ff6-fca41296bd13" />
 <img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
 <img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
 # 2. Diagramas de percepción (Face2)
-
+#hace falta imágenes 
 ## Atención con las reglas lógicas definidas.
 
 Módulo de preprocesamiento que filtra y prioriza la entrada del usuario antes de que llegue al motor de recomendación/generación. Su función es reducir ruido y asegurar que el modelo atienda a las señales relevantes para moda (prenda, talla, color, estilo, ocasión, presupuesto, marca).
