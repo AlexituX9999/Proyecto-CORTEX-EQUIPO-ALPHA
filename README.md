@@ -5,7 +5,7 @@ Perfil del Asistente : Asistente de moda
 <img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
 <img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
 # 2. Diagramas de percepción (Face 2)
-diagramaa_flujo_bot_moda.png
+diagrama_flujo_bot_moda.png
 ## Atención con las reglas lógicas definidas.
 
 Módulo de preprocesamiento que filtra y prioriza la entrada del usuario antes de que llegue al motor de recomendación/generación. Su función es reducir ruido y asegurar que el modelo atienda a las señales relevantes para moda (prenda, talla, color, estilo, ocasión, presupuesto, marca).
