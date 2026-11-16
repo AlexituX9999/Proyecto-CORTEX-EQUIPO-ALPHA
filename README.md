@@ -5,7 +5,7 @@ Perfil del Asistente : Asistente de moda
 <img width="1233" height="810" alt="image" src="https://github.com/user-attachments/assets/01e57e86-fae4-4b47-a51a-0e5a5514f046" />
 <img width="767" height="807" alt="image" src="https://github.com/user-attachments/assets/a0603e6a-65e6-4c0c-938e-94c3978a1183" />
 # 2. Diagramas de percepción (Face2)
-#hace falta imágenes 
+# (hace falta imágenes)
 ## Atención con las reglas lógicas definidas.
 
 Módulo de preprocesamiento que filtra y prioriza la entrada del usuario antes de que llegue al motor de recomendación/generación. Su función es reducir ruido y asegurar que el modelo atienda a las señales relevantes para moda (prenda, talla, color, estilo, ocasión, presupuesto, marca).
@@ -200,6 +200,7 @@ USUARIO: "Prefiero colores oscuros"
 | **Privacidad de Datos** | Información sensible del usuario | Encriptar STM, cumplir RGPD |
 
 ---
+# (Falta imagen de memoria de trabajo)
 <img width="501" height="711" alt="tabla murkwo" src="https://github.com/user-attachments/assets/2bbcb09a-3142-4c0c-a782-dca044b48d04" />
 <img width="381" height="784" alt="diagrama de flujo" src="https://github.com/user-attachments/assets/ed30aa26-28d7-4b2a-858d-ca26d31d752c" />
 # Noodle: Golden Samples
