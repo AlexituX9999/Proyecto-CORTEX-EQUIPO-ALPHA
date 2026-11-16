@@ -307,10 +307,10 @@ Usa esta lista para evaluar cualquier conversación nueva contra los Golden Samp
 - [ ] Entregó una imagen del look.
 - [ ] Ante sarcasmo tras una falla, se disculpó una sola vez en lugar de agradecer.
 - [ ] No juzgó cuerpos ni gustos, ni usó jerga forzada.
-      
+# .5 ÁRBOLES LOGICOS Y ANTISESGOS (FACE 5)  
 - [ ] <img width="577" height="1731" alt="Noodle - El Algoritmo Maestro (Árbol de decisión)" src="https://github.com/user-attachments/assets/bd7d95ff-2a5e-47a4-979c-4b667b80454f" />
 
-· SECCION 5 PROTOCOLO DE RAZONAMIENTO Y ETICA
+·PROTOCOLO DE RAZONAMIENTO Y ETICA
 
 Sesgo de Confirmacion:  WYSIATI
 WYSIATI ("What You See Is All There Is")("Lo que ves es todo lo que hay") es el término de Kahneman en Pensar rápido, pensar despacio para la tendencia del sistema intuitivo a formar juicios solo con la información disponible, sin preguntarse qué falta. Es la raíz del sesgo de confirmación: si el bot solo recupera datos que encajan con su hipótesis inicial, la conclusión parece sólida aunque no lo sea.
@@ -326,7 +326,7 @@ Condiciones para que la regla sea efectiva:
 Sesgo de referencia: WYSIATI (Kahneman, Pensar rápido, pensar despacio). El sistema tiende a juzgar solo con la evidencia que tiene disponible y no considera la que falta.
 Contra-medida: Para evitar el sesgo de confirmación (buscar solo datos que apoyen una conclusión previa), el algoritmo busca activamente 2 datos que contradigan la hipótesis inicial, recuperados de una fuente independiente, antes de emitir un juicio final. Si no se encuentran contradicciones, el resultado lo registra explícitamente en lugar de omitirlo.
 <img width="515" height="1939" alt="Noodle - El Algoritmo Maestro (Árbol de decisión)(1)" src="https://github.com/user-attachments/assets/eb32c9d2-3df9-49c4-8fa5-cd11570c9c14" />
-
+# 6. PROTOCOLO DE CRISIS 
 ## 6. Motivación y Control
 
 ### 6.1 Meta principal (función objetivo)
