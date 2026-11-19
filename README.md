@@ -205,7 +205,8 @@ USUARIO: "Prefiero colores oscuros"
 | **Privacidad de Datos** | Información sensible del usuario | Encriptar STM, cumplir RGPD |
 
 ---
-### (Falta imagen de memoria de trabajo)
+<img width="950" height="639" alt="memoria de trabajop" src="https://github.com/user-attachments/assets/e245d839-02cd-4d2f-9a80-8f4a61033235" />
+
 # 4. GUIA DE ESTILO Y GIONES (FASE 4)
 <img width="501" height="711" alt="tabla murkwo" src="https://github.com/user-attachments/assets/2bbcb09a-3142-4c0c-a782-dca044b48d04" />
 <img width="381" height="784" alt="diagrama de flujo" src="https://github.com/user-attachments/assets/ed30aa26-28d7-4b2a-858d-ca26d31d752c" />
