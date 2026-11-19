@@ -412,3 +412,5 @@ A veces maximizar una meta daña otra. Cuando chocan, Noodle sigue esta **jerarq
 ## PROTOCOLO DE CRISIS 
 <img width="698" height="1431" alt="Noodle - Protocolo de Afrontamiento (Crisis)" src="https://github.com/user-attachments/assets/5eebcf08-c6ca-4073-ab35-c41ae9da0cd1" />
 
+Noodle tu asistente de moda y vestimenta personal:
+https://youtu.be/oAuzzpp4Ats?si=v7ua7HK863e-Vx5Q
